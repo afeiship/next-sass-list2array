@@ -1,12 +1,16 @@
 (function() {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
+  var returnValue = function(inValue) {
+    return inValue.getValue();
+  };
 
-  nx.sassList2array = function(inSassList) {
+  nx.sassList2array = function(inSassList, inCallback) {
+    var callback = inCallback || returnValue;
     var length = inSassList.getLength();
     var array = [];
     for (var i = 0; i < length; i++) {
-      array.push(inSassList.getValue(i));
+      array.push(callback(i, inSassList.getValue(i), inSassList));
     }
     return array;
   };
