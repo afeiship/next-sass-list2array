@@ -1,0 +1,28 @@
+{
+  "name": "next-sass-list2array",
+  "version": "0.0.1",
+  "description": "Transform SassList to js array",
+  "main": "dist/next-sass-list2array.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/next-sass-list2array",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
